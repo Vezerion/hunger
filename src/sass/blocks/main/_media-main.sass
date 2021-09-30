@@ -1,0 +1,60 @@
+@media (max-width: 1280px)
+    .container
+        max-width: 960px
+    .main
+        &__header
+            line-height: 58px
+            font-size: 58px
+        &__uptime
+            height: 18px
+@media (max-width: 992px)
+    .container
+        max-width: 720px
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+    .main
+        &__menu
+            &__item, &::before, &::after
+                display: none
+            &__icon
+                margin: 35px auto 0 auto
+        &__wrapper
+            height: 340px
+            margin-top: 80px
+            justify-content: space-between
+            flex-direction: column
+        &__header__wrapper
+            margin-top: 30px
+        &__uptime
+            width: 260px
+            height: 20px
+            transform: rotate(90deg)
+            position: static
+        &__socials
+            flex-direction: row
+            position: static
+            width: 220px
+            height: 62px
+        &__arrow-down
+            margin-top: 90px
+    .none
+        display: flex
+@media (max-width: 576px)
+    .container
+        max-width: 100%
+    .main
+        &__header__wrapper
+            width: 300px
+            &__header
+                font-size: 38px
+        &__triggers
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            width: 300px
+            height: 150px
+        &__arrow-down
+            margin-top: 170px
+    .menu__block
+        width: 250px
